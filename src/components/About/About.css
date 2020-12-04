@@ -1,0 +1,20 @@
+.about-page {
+    margin-top: 30px;
+    padding: 0px 30px; 
+}
+
+@media (min-width: 768px) {
+    .about-page {
+        margin-top: 30px;
+        padding: 0px 70px; 
+    }
+}
+
+
+@media (min-width: 1024px) {
+    .about-page {
+        margin-top: 30px;
+        padding: 0px 100px; 
+        font-size: 20px;
+    }
+}
