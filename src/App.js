@@ -18,6 +18,7 @@ function App() {
             source: favarticle.source.name,
             description: favarticle.description,
             url: favarticle.url,
+            image: favarticle.image
         }])
          console.log(`Adding ${favarticle.title} to favorites`); 
           console.log("favorites list",favorites); 

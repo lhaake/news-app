@@ -10,8 +10,8 @@ const Favorites = (props) => {
     let showFavorites = faves.map( (fave, index) => { 
     return (
         <div className="fav-article">
-                {fave.urlToImage ?
-                    <img src={fave.urlToImage} /> : ""}
+                {fave.image?
+                    <img src={fave.image} /> : ""}
     
                 <h3 className="fav-title">{fave.title}</h3>
                 <ul>
