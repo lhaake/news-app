@@ -32,6 +32,10 @@ form input {
     letter-spacing: 0.02em;
 }
 
+.form-container h4 {
+    margin: 0;
+}
+
 .form-container {
     display: flex;
     flex-direction: column;

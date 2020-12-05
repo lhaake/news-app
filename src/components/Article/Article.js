@@ -7,11 +7,31 @@ const Article = (props) => {
 
     const data = props.newsData.articles
 
+
+    const trusteddomains = [
+        "techcrunch.com", "wired.com", "news.vice.com", "usatoday.com/news", "time.com", "washingtonpost.com", "wsj.com", "npr.org", "politico.com", "theatlantic.com", "nytimes.com", "latimes.com", "bostonglobe.com", "nymag.com", "newsweek.com", "nbcnews.com", "news.nationalgeographic.com", "msnbc.com", "fortune.com", "espn.go.com", "us.cnn.com", "cbsnews.com", "buzzfeed.com", "pbs.org/newshour", "bloomberg.com", "bbc.co.uk/news", "axios.com", "apnews.com", "aljazeera.com", "abcnews.go.com", "reuters.com", "cnbc.com", "thehill.com", "forbes.com", "vox.com", "mercurynews.com", "nbcboston.com", "wbur.org"
+    ]
+
+    const domainCheck = (article) => {
+        for(let i = 0; i < trusteddomains.length; i += 1) {
+            if(article.url.includes(trusteddomains[i])) {
+                return true
+            }      
+        }
+        return false
+    }
+  
+    
     let displayNews = data.map((article, index) => {
+        
         return (
+            <>
+            {  domainCheck(article) ? 
+         
             <div className="article">
-                { article.urlToImage ?
-                    <img src={article.urlToImage} /> : ""}
+                
+                { article.image ?
+                    <img src={article.image} /> : "" }
             
                 <h3 className="title">{article.title}</h3>
                 <ul>
@@ -21,8 +41,10 @@ const Article = (props) => {
         
                 </ul>
                 <button onClick={() => props.handleFavoritesClick(article)}>Add to Favorites</button>
-
+              
             </div>
+             : null } 
+            </>
         )
     })
     return (
@@ -30,6 +52,7 @@ const Article = (props) => {
             {displayNews}
         </>
     )
+    
 }
 
 export default Article

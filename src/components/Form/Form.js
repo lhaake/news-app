@@ -5,7 +5,6 @@ const Form = (props) => {
     // state to keep track of input entered in form
     const [keyword, setKeyword] = useState("")
 
-
     const handleSubmit = event => {
         event.preventDefault()
         console.log("handleSubmit was clicked!")
@@ -22,8 +21,8 @@ const Form = (props) => {
     return (
         <div className="form-container">
             <h1>Search Top Headlines</h1>
-            <h6>Enter a keyword to search for news articles!</h6>
-            <p>Note: if your keyword includes non-alphabetical characters, wrap your search keyword in quotes. For example, "covid-19" </p>
+            <h4>Enter a keyword to search for news articles!</h4>
+            <p><span style={{textDecoration: "underline"}}>Note:</span> wrap keywords with special characters in quotes. For example: "covid-19" </p>
             <form onSubmit={handleSubmit}>
                 <input
                     type="text"

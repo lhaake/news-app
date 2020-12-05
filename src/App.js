@@ -3,7 +3,6 @@ import './App.css';
 import Home from "./components/Home/Home"
 import Nav from "./components/Nav/Nav"
 import About from "./components/About/About"
-import Footer from "./components/Footer/Footer"
 import Favorites from "./components/Favorites/Favorites"
 import { Route, Switch } from "react-router-dom"
 
@@ -19,7 +18,6 @@ function App() {
             source: favarticle.source.name,
             description: favarticle.description,
             url: favarticle.url,
-            urlToImage: favarticle.urlToImage
         }])
          console.log(`Adding ${favarticle.title} to favorites`); 
           console.log("favorites list",favorites); 
@@ -59,7 +57,6 @@ function App() {
         
       </Switch>
 
-      {/* <Footer /> */}
     </div>
   );
 }
