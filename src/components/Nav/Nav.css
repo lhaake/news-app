@@ -20,6 +20,7 @@
 .nav-pages li {
   color: white;
   font-weight: bold;
+  font-size: calc(10px + 2vmin); 
 }
 
 .nav-bar .date {
@@ -36,16 +37,14 @@
   font-family: 'Cinzel', serif;
   letter-spacing: 0.09em;
   font-size: calc(25px + 2vmin); 
-  /* font-family: Arial, Helvetica, sans-serif; */
-  
 } 
 
-/* .nav-bar .about {
-  color: white;
-    padding-right: 100px;
+@media (max-width: 400px) {
+  .nav-pages li {
+    color: white;
+    font-weight: bold;
+    font-size: calc(10px + 2vmin); 
+    padding-left: 10px;
+    padding-right: 5px;
+  } 
 }
-
-.nav-bar .favorites {
-  color: white;
-    padding-right: 100px;
-} */

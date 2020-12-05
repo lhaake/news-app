@@ -18,12 +18,13 @@ form {
 }
 
 form input {
-    width: 235px;
+    width: 200px;
     height: 25px;
 }
 
 .form-container p {
-    padding: 0px 200px;
+    font-size: 11px;
+    padding: 0px 20px;
 }
 
 .form-container h1 {
@@ -32,8 +33,10 @@ form input {
     letter-spacing: 0.02em;
 }
 
-.form-container h4 {
+.form-container h3 {
     margin: 0;
+    padding: 0px 10px;
+    font-size: 16px;
 }
 
 .form-container {
@@ -41,4 +44,35 @@ form input {
     flex-direction: column;
     align-items: center;
     justify-content: center; 
+}
+
+@media (min-width: 768px) {
+    .form-container h1 {
+    padding: 20px 20px 0px 20px;
+    font-family: 'Cinzel', serif;
+    letter-spacing: 0.02em;
+    font-size: 32px;
+} 
+
+form input {
+    width: 320px;
+    height: 25px;
+}
+
+}
+
+@media (min-width: 1024px) {
+   
+.form-container h1 {
+    padding: 20px 20px 0px 20px;
+    font-family: 'Cinzel', serif;
+    letter-spacing: 0.02em;
+    font-size: 36px;
+} 
+
+form input {
+    width: 320px;
+    height: 25px;
+}
+
 }
