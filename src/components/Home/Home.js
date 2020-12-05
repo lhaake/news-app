@@ -15,7 +15,7 @@ const Home = (props) => {
     // Make API Call
     const getNews = async (input) => {
 
-        let newsUrl = `https://gnews.io/api/v4/search?q=${input}&sortby=publishedBy&lang=en&country=us&token=${process.env.REACT_APP_API_KEY}`
+        let newsUrl = `https://gnews.io/api/v4/search?q=${input}&sortby=publishedAt&lang=en&country=us&token=${process.env.REACT_APP_API_KEY}`
 
         const response = await fetch(newsUrl)
         const json = await response.json()
