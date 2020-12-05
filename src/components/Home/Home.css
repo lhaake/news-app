@@ -1,5 +1,4 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500&display=swap');
 
 
 .home {
@@ -9,8 +8,8 @@
     justify-content: center;
     
 }
-.home h1 {
+/* .home h1 {
     padding: 20px 20px 5px 20px;
     font-family: 'Cinzel', serif;
     letter-spacing: 0.02em;
-}
+} */

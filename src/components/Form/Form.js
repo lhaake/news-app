@@ -20,8 +20,10 @@ const Form = (props) => {
     }
 
     return (
-        <>
-            <p>Enter a keyword to search daily news articles!</p>
+        <div className="form-container">
+            <h1>Search Top Headlines</h1>
+            <h6>Enter a keyword to search for news articles!</h6>
+            <p>Note: if your keyword includes non-alphabetical characters, wrap your search keyword in quotes. For example, "covid-19" </p>
             <form onSubmit={handleSubmit}>
                 <input
                     type="text"
@@ -32,7 +34,7 @@ const Form = (props) => {
                 <button type="submit">Search</button>
             </form>
 
-        </>
+        </div>
     )
 }
 

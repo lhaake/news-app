@@ -15,7 +15,7 @@ const Home = (props) => {
     // Make API Call
     const getNews = async (input) => {
 
-        let newsUrl = `https://gnews.io/api/v4/search?q=${input}&sortby=relevance&lang=en&country=us&token=f7817f300562e02b6594a4319ca4d9fd`
+        let newsUrl = `https://gnews.io/api/v4/search?q=${input}&sortby=relevance&from=${date}&lang=en&country=us&token=${process.env.REACT_APP_API_KEY}`
 
         const response = await fetch(newsUrl)
         const json = await response.json()
@@ -25,14 +25,12 @@ const Home = (props) => {
     
     // Articles related to covid-19 on page load
     useEffect(() => {
-        getNews("covid19")
+        getNews("\"covid-19\"")
 
     }, []);
 
     return (
         <div className="home">
-
-            <h1>Today's Top Headlines</h1>
             <Form getNews={getNews} />
             
             {/* Conditional rendering   */}

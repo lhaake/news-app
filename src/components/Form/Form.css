@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500&display=swap');
 
 form button {
     margin-left: 10px;
@@ -19,4 +20,21 @@ form {
 form input {
     width: 235px;
     height: 25px;
+}
+
+.form-container p {
+    padding: 0px 200px;
+}
+
+.form-container h1 {
+    padding: 20px 20px 0px 20px;
+    font-family: 'Cinzel', serif;
+    letter-spacing: 0.02em;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
 }
