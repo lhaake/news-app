@@ -25,7 +25,7 @@ const Home = (props) => {
     
     // Articles related to covid-19 on page load
     useEffect(() => {
-        getNews("\"covid-19\"")
+        getNews("coronavirus")
 
     }, []);
 

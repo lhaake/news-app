@@ -22,7 +22,7 @@ const Form = (props) => {
         <div className="form-container">
             <h1>Top Headlines</h1>
             <h3>Enter a keyword to search for news articles!</h3>
-            <p><span style={{textDecoration: "underline"}}>Note:</span> wrap keywords with special characters in quotes. For example: "covid-19"</p>
+            <p><span style={{textDecoration: "underline"}}>Note:</span> wrap keywords with special characters in quotes. For example: "COVID-19"</p>
             <form onSubmit={handleSubmit}>
                 <input
                     type="text"
